@@ -41,6 +41,10 @@ const (
 // KeyValues is a type alias that exposes convenience functions like Sort, FindByKey.
 type KeyValues []KeyValue
 
+func Printkeyvalue() {
+	fmt.Println("Key_Value.go (model/keyvalue.go)")
+}
+
 // String creates a String-typed KeyValue
 func String(key string, value string) KeyValue {
 	return KeyValue{Key: key, VType: StringType, VStr: value}
